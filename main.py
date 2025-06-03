@@ -68,6 +68,8 @@ while True:
     elif key == ord('e'):  # Traducir de español a inglés
         roi = frame[cuadro:480 - cuadro, cuadro:640 - cuadro]
         extraer_y_traducir_texto(roi, idioma_origen='spa', idioma_destino='en')
+        
+        print("se hizo este cambio")
 
 cap.release()
 cv2.destroyAllWindows()
